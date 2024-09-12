@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #cebeb0;
+  /* Color de fondo de la barra de navegación */
+  color: #ddc7b4;
+  /* Color del texto de la barra de navegación */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para dar un efecto de elevación */
+}
+
+.navbar .navbar-logo {
+  width: 100px;
+  /* Tamaño reducido del logo */
+  height: auto;
+  /* Mantener la proporción del logo */
+}
+
+.navbar-nav .nav-link {
+  color: #6c3115;
+  /* Color del texto de los enlaces */
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b4724c;
+  /* Color dorado al pasar el ratón por encima */
+}
+
+
+footer{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #cebeb0;;  
+  border-color: black;
+  
+}
+
+footer {
+  background-color: #cebeb0;;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  color: black; 
+}
+.footer-image {
+  max-height: 100px; 
+  width: auto; 
+}
+.social-media {
+  display: flex;
+  flex-direction: column; /* Coloca los íconos uno debajo del otro */
+  align-items: center; /* Centra los íconos horizontalmente */
+}
+
+.social-media a {
+  margin: 0.5rem 0; /* Espacio entre los íconos */
+}
+
+
+/* Estilo para el footer al final de la página */
+.footer-bottom {
+  background-color: #cebeb0;
+  padding: 0.5rem 0;
+}
