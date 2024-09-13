@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Tower │ Hardwood Creations</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="rsc/styles_producto.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md mb-4">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="icon.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="colores.html">Colores</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Mesas</a></li>
+                      <li><a class="dropdown-item" href="#">Muebles</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Ver Todo</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled">Promos</a>
+              </li>
+          </ul>
+          <div class="search-and-icons">
+              <form class="d-flex mb-2 me-4" role="search">
+                  <input class="form-control me-2" type="search" aria-label="Search">
+              </form>
+              <div class="user-icons d-flex mb-2">
+                  <div class="account"><i class="bi bi-person"></i></div>
+                  <div class="wishlist"><i class="bi bi-heart"></i></div>
+                  <div class="cart"><i class="bi bi-cart3"></i></div>
+                </div>
+          </div>
+          <div class="contact-info">
+              <p>+9876543210 | +1234567890</p>
+              <p><a href="mailto:">hardwoodc@gmail.com</a></p>
+          </div>
+      </div>
+  </div>
+</nav>
+<!-- Info producto -->
+<div class="container">
+  <div class="row">
+        <!-- Imagen del Producto -->
+        <div class="col-md-6 text-center">
+            <div class="product-image mb-4">
+                <img class="img-fluid" src="prod_img/tower.png" alt="">
+            </div>
+        </div>
+        
+        <!-- Información del Producto -->
+        <div class="col-md-6">
+            <!-- Nombre del Producto -->
+            <h1 class="product-name">Biblioteca Tower</h1>
+            <hr>
+            
+            <!-- Descripción -->
+            <div class="product-description align-text-left">
+                <h3 style="font-weight:bolder;">Personaliza tu producto</h5>
+                <h4>Medidas disponibles:</h4>
+                <h6>(Largo x Ancho x Altura)</h6> 
+                  <select class="form-select" id="dimension-select" aria-label="Default select example">
+                    <option value="-">Selecciona Medida</option>
+                    <option value="0">0,80 x 0,30 x 1,60</option>
+                    <option value="1">0,80 x 0,30 x 1,70</option>
+                    <option value="2">1,00 x 0,35 x 1,70</option>
+                    <option value="3">1,00 x 0,50 x 1,70</option>
+                    <option value="4">90,00 x 0,40 x 1,80</option>
+                </select>
+    
+                  <!-- Selector de colores para la madera -->
+                  <h4>Selecciona el color de la madera:</h4>
+                  <p>Te sugerimos ver nuestros colores haciendo click <a href="colores.html" class="link-underline-dark">Aca</a></p>
+                  <div class="color-selector">
+                      <button class="btn-color" data-color="Cedro">Cedro</button>
+                      <button class="btn-color" data-color="Caoba">Caoba</button>
+                      <button class="btn-color" data-color="Nogal">Nogal</button>
+                      <button class="btn-color" data-color="Roble">Roble</button>
+                      <button class="btn-color" data-color="Castaño">Castaño</button>
+                      <button class="btn-color" data-color="Wengue">Wengue</button>
+                      <button class="btn-color" data-color="Negro">Negro</button>
+                      <button class="btn-color" data-color="Paraíso">Paraíso</button>
+                      <button class="btn-color" data-color="Miel">Miel</button>
+                      <button class="btn-color" data-color="Habano Claro">Habano Claro</button>
+                      <button class="btn-color" data-color="Habano Oscuro">Habano Oscuro</button>
+                  </div>
+                  <p>Color de madera seleccionado: <span id="selected-wood-color" style="font-weight: bolder;">Ninguno</span></p>
+          
+                  <!-- Selector de colores para el hierro -->
+                  <h4>Selecciona el color del hierro:</h4>
+                  <div class="color-selector">
+                      <button class="btn-color-iron" data-color="Negro">Negro</button>
+                      <button class="btn-color-iron" data-color="Blanco">Blanco</button>
+                      <button class="btn-color-iron" data-color="Gris">Gris</button>
+                  </div>
+                  <p>Color de hierro seleccionado: <span id="selected-iron-color" style="font-weight: bolder;">Ninguno</span></p>
+            
+              
+               
+            </div>
+              <!-- Precio y Cantidad -->
+              <div class="row text-center align-items-center">
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="price">
+                        <p class="precio" id="precioIni">$189999</p> <!--ESTE ES EL PRECIO INICIAL DE DONDE SE ACTUALIZA DESPUES EN JS-->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="quantity">
+                        <button class="btn btn-outline-secondary btn-quantity" id="minus-btn">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1" class="input-quantity">
+                        <button class="btn btn-outline-secondary btn-quantity" id="plus-btn">+</button>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Botones de Compra -->
+              <div class="row mt-4 mb-4">
+                <div class="col-5">
+                    <button class="btn btn-success w-100">COMPRAR</button>
+                </div>
+                <div class="col-7">
+                    <button class="btn btn-primary w-100">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer de la pagina -->
+<footer class="footer text-white py-4">
+  <div class="container">
+      <div class="row">
+          <!-- Contacto -->
+          <div class="col-md-4">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled">
+                  <li>Email: hardwoodc@gmail.com</li>
+                  <li>Teléfono: +54 11 1234-5678</li>
+                  <li>WhatsApp: +54 11 9876-5432</li>
+              </ul>
+          </div>
+          <!-- Ubicación -->
+          <div class="col-md-4">
+              <h5>Ubicación</h5>
+              <ul class="list-unstyled">
+                  <li>Dirección: Av. Siempre Viva 123</li>
+                  <li>Ciudad: Buenos Aires, Argentina</li>
+                  <li>Código Postal: 1001</li>
+              </ul>
+          </div>
+          <!-- Horarios -->
+          <div class="col-md-4">
+              <h5>Horarios</h5>
+              <ul class="list-unstyled">
+                  <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+                  <li>Sábados: 9:00 AM - 2:00 PM</li>
+                  <li>Domingos: Cerrado</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<!-- Scripts de Bootstrap y JavaScript personalizado -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="rsc/script_producto.js"></script>
+</body>
+</html>
