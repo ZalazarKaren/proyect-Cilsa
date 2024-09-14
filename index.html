@@ -16,28 +16,49 @@
 
 <body>
   <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-sm fixed-top text-uppercase fw-medium" style="background-color: #cebeb0;">
-    <div class="container-fluid">
-      <img class="navbar-logo" src="assets/img/logo.png" alt="Logo" style="max-width: 150px; height: auto;">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-md mb-0">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="../../assets/img/icon.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categoria1.html">Categoría 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categoria2.html">Categoría 2</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./front/productos/colores.html">Colores</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./front/productos/mesas.html">Mesas</a></li>
+                      <li><a class="dropdown-item" href="./front/productos/muebles.html">Muebles</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="./front/productos/catalogo.html">Ver Todo</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <div class="search-and-icons">
+              <form class="d-flex mb-2 me-4" role="search">
+                  <input class="form-control me-2" type="search" aria-label="Search">
+              </form>
+              <div class="user-icons d-flex mb-2">
+                  <div class="account"><i class="bi bi-person"></i></div>
+                  <div class="wishlist"><i class="bi bi-heart"></i></div>
+                  <div class="cart"><i class="bi bi-cart3"></i></div>
+                </div>
+          </div>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Carrusel de Imágenes -->
   <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
@@ -158,7 +179,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <img src="assets/img/logo.png" alt="Imagen del logo " class="img-fluid footer-image">
+        <img src="assets/img/icon.png" alt="Imagen del logo " class="img-fluid footer-image">
       </div>
     </div>
   </div>

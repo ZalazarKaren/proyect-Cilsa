@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa Yard │ Hardwood Creations</title>
+    <title>Biblioteca Tower │ Hardwood Creations</title>
     <link rel="shortcut icon" href="icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="rsc/styles_producto.css">
+    <link rel="stylesheet" href="../../assets/css/styles_producto.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 <nav class="navbar navbar-expand-md mb-4">
   <div class="container-fluid">
       <a class="navbar-brand" href="#">
-          <img src="icon.png" alt="">
+          <img src="../../assets/img/icon.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,19 +26,19 @@
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="colores.html">Colores</a>
+                  <a class="nav-link" href="./colores.html">Colores</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                   </a>
                   <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Mesas</a></li>
-                      <li><a class="dropdown-item" href="#">Muebles</a></li>
+                    <li><a class="dropdown-item" href="./mesas.html">Mesas</a></li>
+                    <li><a class="dropdown-item" href="./muebles.html">Muebles</a></li> 
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a class="dropdown-item" href="#">Ver Todo</a></li>
+                      <li><a class="dropdown-item" href="./catalogo.html">Ver Todo</a></li>
                   </ul>
               </li>
               <li class="nav-item">
@@ -55,10 +55,6 @@
                   <div class="cart"><i class="bi bi-cart3"></i></div>
                 </div>
           </div>
-          <div class="contact-info">
-              <p>+9876543210 | +1234567890</p>
-              <p><a href="mailto:">hardwoodc@gmail.com</a></p>
-          </div>
       </div>
   </div>
 </nav>
@@ -68,14 +64,14 @@
         <!-- Imagen del Producto -->
         <div class="col-md-6 text-center">
             <div class="product-image mb-4">
-                <img class="img-fluid" src="prod_img/yard.png" alt="">
+                <img class="img-fluid" src="../../assets/img/tower.png" alt="">
             </div>
         </div>
         
         <!-- Información del Producto -->
         <div class="col-md-6">
             <!-- Nombre del Producto -->
-            <h1 class="product-name">Mesa Yard</h1>
+            <h1 class="product-name">Biblioteca Tower</h1>
             <hr>
             
             <!-- Descripción -->
@@ -85,16 +81,16 @@
                 <h6>(Largo x Ancho x Altura)</h6> 
                   <select class="form-select" id="dimension-select" aria-label="Default select example">
                     <option value="-">Selecciona Medida</option>
-                    <option value="0">1,20 x 0,80 x 0,80</option>
-                    <option value="1">1,40 x 0,80 x 0,80</option>
-                    <option value="2">1,40 x 0,90 x 0,80</option>
-                    <option value="3">1,80 x 0,90 x 0,80</option>
-                    <option value="4">2,00 x 1,00 x 0,80</option>
+                    <option value="0">0,80 x 0,30 x 1,60</option>
+                    <option value="1">0,80 x 0,30 x 1,70</option>
+                    <option value="2">1,00 x 0,35 x 1,70</option>
+                    <option value="3">1,00 x 0,50 x 1,70</option>
+                    <option value="4">90,00 x 0,40 x 1,80</option>
                 </select>
     
                   <!-- Selector de colores para la madera -->
                   <h4>Selecciona el color de la madera:</h4>
-                  <p>Te sugerimos ver nuestros colores haciendo click <a href="colores.html" class="link-underline-dark">Aca</a></p>
+                  <p>Te sugerimos ver nuestros colores haciendo click <a href="./colores.html" class="link-underline-dark">Aquí</a></p>
                   <div class="color-selector">
                       <button class="btn-color" data-color="Cedro">Cedro</button>
                       <button class="btn-color" data-color="Caoba">Caoba</button>
@@ -154,43 +150,40 @@
     </div>
 </div>
 <!-- Footer de la pagina -->
-<footer class="footer text-white py-4">
-  <div class="container">
+<footer class="footer text-center">
+    <div class="container p-4">
       <div class="row">
-          <!-- Contacto -->
-          <div class="col-md-4">
-              <h5>Contacto</h5>
-              <ul class="list-unstyled">
-                  <li>Email: hardwoodc@gmail.com</li>
-                  <li>Teléfono: +54 11 1234-5678</li>
-                  <li>WhatsApp: +54 11 9876-5432</li>
-              </ul>
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">Contacto</h5>
+          <p>Hardwood.Creations@gmail.com</p>
+          <p>tel-0800-xxx-xxx</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="social-media">
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="mx-2">
+              <img src="../../assets/img/square-facebook.svg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/tuusuario" target="_blank" class="mx-2">
+              <img src="../../assets/img/square-facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.twitter.com/tuusuario" target="_blank" class="mx-2">
+              <img src="../../assets/img/twitter.svg" alt="Twitter" width="30" height="30">
+            </a>
           </div>
-          <!-- Ubicación -->
-          <div class="col-md-4">
-              <h5>Ubicación</h5>
-              <ul class="list-unstyled">
-                  <li>Dirección: Av. Siempre Viva 123</li>
-                  <li>Ciudad: Buenos Aires, Argentina</li>
-                  <li>Código Postal: 1001</li>
-              </ul>
-          </div>
-          <!-- Horarios -->
-          <div class="col-md-4">
-              <h5>Horarios</h5>
-              <ul class="list-unstyled">
-                  <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
-                  <li>Sábados: 9:00 AM - 2:00 PM</li>
-                  <li>Domingos: Cerrado</li>
-              </ul>
-          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="../../assets/img/icon.png" alt="Imagen del logo " class="img-fluid footer-image">
+        </div>
       </div>
-  </div>
-</footer>
-
+    </div>
+    <div class="footer-bottom text-center p-3">
+      <p>&copy; 2024 Hardwood Creations. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
 
 <!-- Scripts de Bootstrap y JavaScript personalizado -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="rsc/script_producto.js"></script>
+<script src="../../assets/js/script_producto.js"></script>
 </body>
 </html>

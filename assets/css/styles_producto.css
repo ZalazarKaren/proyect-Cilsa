@@ -19,7 +19,7 @@ main {
 /* Navbar */
 .navbar {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
-    background-color: #b1884f;
+    background-color: #cebeb0;
   }
   .navbar .navbar-brand img {
     width: 80px;
@@ -191,26 +191,48 @@ main {
 }
 
 
-/* Footer */
+footer{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #cebeb0;;  
+  border-color: black;
+  
+}
+
 footer {
-    background-color: #230903;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
+  background-color: #cebeb0;;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
-.footer-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+footer p {
+  color: black; 
+}
+.footer-image {
+  max-height: 100px; 
+  width: auto; 
+}
+.social-media {
+  display: flex;
+  flex-direction: column; /* Coloca los íconos uno debajo del otro */
+  align-items: center; /* Centra los íconos horizontalmente */
 }
 
-.footer-section div {
-    margin: 10px;
+.social-media a {
+  margin: 0.5rem 0; /* Espacio entre los íconos */
+}
+
+
+/* Estilo para el footer al final de la página */
+.footer-bottom {
+  background-color: #cebeb0;
+  padding: 0.5rem 0;
 }
 
 /* RESPONSIVIDAD PARA PANTALLAS CHICAS */
