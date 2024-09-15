@@ -299,7 +299,7 @@ footer p {
 }
 
 .card-img-top {
-  height: 200px; /* AJUSTA LA ALTURA */
+  height: 200px; 
   object-fit: cover; /* RECORTA LA IMAGEN PARA QUE ENCAJE */
   width: 100%; /* ASEGURA QUE LA IMAGEN OCUPE TODO EL ANCHO */
 }
