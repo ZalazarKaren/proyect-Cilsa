@@ -24,4 +24,4 @@ Hardwood Creations es una página web responsiva creada con Bootstrap. La web es
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/ZalazarKaren/proyect-Cilsa.git
